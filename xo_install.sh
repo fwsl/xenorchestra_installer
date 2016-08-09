@@ -13,6 +13,7 @@ cd xo-server
 sudo npm install && npm run build
 sudo cp sample.config.yaml .xo-server.yaml
 sudo sed -i /mounts/a\\"    '/': '/opt/xo-web/dist'" .xo-server.yaml
+npm install xo-server-transport-email
 cd /opt/xo-web
 sudo npm i lodash.trim@3.0.1
 sudo npm install
