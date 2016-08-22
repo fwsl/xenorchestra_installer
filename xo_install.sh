@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo apt-get install --yes nfs-common
+sudo apt-get update
+sudo apt-get install --yes nfs-common git curl npm
 cd /opt
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install --yes nodejs
