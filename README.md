@@ -23,24 +23,22 @@ If you don't want NFS capabilities run "sudo apt-get remove nfs-common".
 
 You can test the script using Vagrant and Virtualbox with Debian Jessie 64bit template.
 
-*Requirements:
+* Requirements:
+    - Install Virtualbox >=4.3.x
+    - Download and install Vagrant from https://www.vagrantup.com/downloads.html
+    - Install Vagrant plugins
+    ```
+    vagrant plugin install vagrant­hostsupdater 
+    vagrant plugin install vagrant­hosts 
+    vagrant plugin install vagrant­scp 
+    vagrant plugin install vagrant­vbguest 
+    vagrant plugin install vagrant-host-shell
+    ```
 
-- Install Virtualbox >=4.3.x
-
-- Download and install Vagrant from https://www.vagrantup.com/downloads.html
-- Install Vagrant plugins
-```
-vagrant plugin install vagrant­hostsupdater 
-vagrant plugin install vagrant­hosts 
-vagrant plugin install vagrant­scp 
-vagrant plugin install vagrant­vbguest 
-vagrant plugin install vagrant-host-shell
-```
-
-*Steps
-- go to Vagrant folder
-- run 'vagrant up'
-- wait for the vagrant to finish
-- start browser and go to 10.11.12.13
-- test if everything is ok
+* Steps
+    - go to Vagrant folder
+    - run `vagrant up`
+    - wait for the vagrant to finish
+    - start browser and go to 10.11.12.13
+    - test if everything is ok
 
