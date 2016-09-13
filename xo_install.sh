@@ -18,11 +18,11 @@ if [ -d "$xoserverDIR" ]; then
 fi
 
 apt-get update
-apt-get install --yes curl
+apt-get install --yes curl git
 cd "$WORKDIR"
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 apt-get install --yes nodejs
-apt-get install --yes nfs-common git npm build-essential redis-server libpng12-dev git python-minimal
+apt-get install --yes nfs-common npm build-essential redis-server libpng12-dev git python-minimal
 
 curl -o /usr/local/bin/n https://raw.githubusercontent.com/visionmedia/n/master/bin/n
 chmod +x /usr/local/bin/n
